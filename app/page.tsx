@@ -21,9 +21,10 @@ export default function Home() {
 		<div className="col">
 			<Button onClick={play}>play</Button>
 			<Button onClick={pause}>pause</Button>
+			<span></span>
 			<audio
 				ref={audioRef}
-				src="ukelele.mp3"></audio>
+				src="Scarlet Fire - Otis McDonald.mp3"></audio>
 		</div>
 	);
 }
