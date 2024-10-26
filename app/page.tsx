@@ -69,6 +69,7 @@ export default function Home() {
 			/>
 			<Button onClick={play}>play</Button>
 			<Button onClick={pause}>pause</Button>
+			<span></span>
 			<audio
 				ref={audioRef}
 				src={`data:audio/wav;base64,${audio}`}></audio>
