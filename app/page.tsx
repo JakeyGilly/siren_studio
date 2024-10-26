@@ -11,9 +11,16 @@ export default function Home() {
 		}
 	}
 
+	function pause() {
+		if (audioRef.current){
+			audioRef.current.pause()
+		}
+	}
+
 	return (
 		<div className="col">
-			<Button onClick={play}>Click</Button>
+			<Button onClick={play}>▶️</Button>
+			<Button onClick={pause}>⏸️</Button>
 			<audio
 				ref={audioRef}
 				src="ukelele.mp3"></audio>
