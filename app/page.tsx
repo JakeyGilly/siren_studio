@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/Button";
 import { useRef } from "react";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
 	return (
 		<div className="col">
-			<button onClick={play}>Click</button>
+			<Button onClick={play}>Click</Button>
 			<audio
 				ref={audioRef}
 				src="ukelele.mp3"></audio>
