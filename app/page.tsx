@@ -19,8 +19,8 @@ export default function Home() {
 
 	return (
 		<div className="col">
-			<Button onClick={play}>▶️</Button>
-			<Button onClick={pause}>⏸️</Button>
+			<Button onClick={play}>play</Button>
+			<Button onClick={pause}>pause</Button>
 			<audio
 				ref={audioRef}
 				src="ukelele.mp3"></audio>
